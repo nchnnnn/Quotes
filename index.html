@@ -4,59 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Today's Quotes</title>
-    <style>
-      body {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        background-color: #121212;
-        height: 100dvh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      h1,
-      h2,
-      h6 {
-        -webkit-user-select: none; /* Safari */
-        -ms-user-select: none; /* IE 10 and IE 11 */
-        user-select: none; /* Standard syntax */
-      }
-      div {
-        display: flex;
-        padding: 5px;
-        justify-content: center;
-        align-items: center;
-        margin: 2rem;
-      }
-      h1 {
-        color: white;
-
-        text-transform: uppercase;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: clamp(2rem, 8vw, 3.5rem);
-      }
-      h2 {
-        position: absolute;
-        top: 0;
-        color: rgb(70, 70, 70);
-        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-      }
-      h6 {
-        color: white;
-        position: absolute;
-        bottom: 0;
-      }
-    </style>
+    <link rel="stylesheet" href="file/style.css" />
   </head>
   <body>
+    <!-- <dotlottie-player
+      id="loading"
+      src="https://lottie.host/c2293068-6ddc-420f-b265-13ab135c8efc/L69Liu2dul.json"
+      background="transparent"
+      speed="2"
+      style="width: 15vw; height: 15vh"
+      loop
+      autoplay
+    ></dotlottie-player> -->
+
     <h2>Quote</h2>
-    <div>
-      <h1>
-        “ If You Expect Disappointment, <br />Then You Can Never Really Get
-        Disappointed. ”<br />
-      </h1>
-    </div>
-    <h6>Day 1</h6>
+    <main id="timeline"><h3 id="result"></h3></main>
+
+    <button id="random">
+      <img src="" alt="" srcset="" />
+      <lottie-interactive
+        path="animation/Reset.json"
+        speed="2.5"
+        interaction="click"
+        reset
+      ></lottie-interactive>
+    </button>
+
+    <script src="file/script.js"></script>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/lottie-interactive@latest/dist/lottie-interactive.js"
+    ></script>
   </body>
 </html>
